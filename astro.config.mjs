@@ -4,6 +4,6 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "",
+  site: "https://ubo-five.vercel.app/",
   integrations: [tailwind(), icon()],
 });
