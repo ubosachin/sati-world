@@ -1,30 +1,37 @@
 ---
-import { Icon } from "astro-icon/components";
-import ContentSection from "~/components/content-section.astro";
+import { Icon } from "astro-icon/components"; // Import Icon component for using icons
+import ContentSection from "~/components/content-section.astro"; // Import ContentSection component
 ---
 
-<ContentSection title="Just ship less" id="intro">
+<ContentSection title="Empower Your Digital" id="intro">
+  <!-- Slot for an icon in the eyebrow position -->
   <Icon slot="eyebrow" name="logomark" class="size-32" />
+  
+  <!-- Slot for lead content with highlighted text -->
   <Fragment slot="lead">
-    Astro is a new kind of site builder for the
+    SATI WORLD is a new kind of site builder for the
     <span class="text-primary">modern</span> web.
     <span class="text-primary">Lightning-fast</span>
     performance meets <span class="text-primary">powerful</span> developer experience.
   </Fragment>
+  
+  <!-- Grid layout for CTA buttons -->
   <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <!-- Instagram follow button -->
     <a
-      href="https://docs.astro.build/"
+      href="https://www.instagram.com/sati.world0/"
       class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
     >
-      <Icon name="mdi:telescope" class="size-8" />
-      <span>Read the docs</span>
+      <Icon name="mdi:instagram" class="size-8" />
+      <span>Follow US !</span>
     </a>
+    <!-- Project visit button -->
     <a
-      href="https://astro.new/"
+      href="https://ubo-five.vercel.app/"
       class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
     >
       <Icon name="mdi:rocket" class="size-8" />
-      <span>Try it out</span>
+      <span>Visit our new project</span>
     </a>
   </div>
 </ContentSection>
